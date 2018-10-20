@@ -24,7 +24,5 @@ services:
   kibana:
     build: kibana/
     restart: unless-stopped
-    volumes:
-      - kibana_data:/opt/kibana
     ports:
       - "5601:5601"
